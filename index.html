@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextTrace - AI Content Detector</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <span class="project-name">TextTrace</span> 
+            <span class="tagline">Detect AI-Generated Content Instantly</span>
+        </h1>        
+        <p>Identify AI-generated text with our advanced detection tool.</p>
+        <button class="start-btn" onclick="scrollToAnalyzer()">Start Analysis</button>
+    </header>
+
+    <section id="about">
+        <div class="about-content">
+            <h2>About TextTrace</h2>
+            <p>TextTrace is an advanced AI content detection tool designed to help users identify AI-generated text with precision. Using state-of-the-art machine learning models, it analyzes text and determines whether the content is AI-generated or human-written with high accuracy.</p>
+            <p>The detection process is simple yet powerful. Users enter a piece of text, which is then processed through an AI-powered algorithm trained on vast datasets of both human and AI-generated content. Based on the analysis, TextTrace provides a probability score, helping users understand the likelihood of AI involvement in the writing.</p>
+            <p>TextTrace is valuable across various domains. In academics, it ensures originality by detecting AI-generated essays and assignments. For content verification, it helps journalists, researchers, and businesses identify AI-written articles, blogs, and social media posts. It also benefits marketers and SEO professionals by ensuring content authenticity and human-like quality. Whether you're an educator, editor, or digital creator, TextTrace empowers you with a reliable tool to verify text authenticity with ease.</p>
+        </div>
+    </section>
+
+    <div class="analyzer-container" id="analyzer">
+        <div class="left">
+            <textarea id="textInput" placeholder="Enter text here..."></textarea>
+            <button class="analyze-btn" onclick="analyzeText()">Analyze</button>
+        </div>
+        
+        <div class="right">
+            <p class="info-text">TextTrace analyzes text and detects AI-generated content with precision.</p>
+            <canvas id="resultChart"></canvas>            
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h2>TextTrace</h2>
+                <p>Ensuring authenticity, one text at a time.</p>
+            </div>
+            <div class="footer-center">
+                <h3>Contact Me</h3>
+                <p>Email: <a href="mailto:devan2004v@gmail.com">devan2004v@gmail.com</a></p>
+                <p>Location: Anywhere on the Internet 🌍</p>
+            </div>
+            <div class="footer-right">
+                <h3>Follow Me</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/v-devanarayan-b6319a220/" target="_blank">LinkedIn</a>                    
+                    <a href="https://github.com/CodeTitan7" target="_blank">GitHub</a>               
+                    <a href="https://twitter.com/v_devanarayan" target="_blank">X</a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2025 AI Content Detector. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
