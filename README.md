@@ -19,7 +19,7 @@ TextTrace is an AI-powered content detection tool designed to help users determi
 ```
 /texttrace
 ├── /api
-    ├── proxy.js
+│   ├── proxy.js
 ├── /css
 │   ├── styles.css
 ├── /js
