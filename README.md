@@ -29,11 +29,11 @@ TextTrace is an AI-powered content detection tool designed to help users determi
 ```
 
 ## 🛠️ Technologies Used
-- **HTML** - Structure of the webpage
-- **CSS** - Styling and UI design
-- **JavaScript** - Logic for AI detection and chart visualization
-- **Chart.js** - Pie chart representation
-- **Vercel** - Deployment platform
+- **HTML** 
+- **CSS** 
+- **JavaScript** 
+- **Chart.js** 
+- **Vercel** 
 
 ---
 
