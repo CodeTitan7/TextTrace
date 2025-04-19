@@ -10,29 +10,29 @@
     <link rel="icon" type="image/png" sizes="48x48" href="images/icon48.png">
     <link rel="icon" type="image/png" sizes="128x128" href="images/icon128.png">
     <style>
-        /* Override styles for privacy policy page */
+        /* Privacy policy specific styles */
         #privacy-policy {
-            background-color: #fff;
+            background-color: rgba(255, 245, 235, 0.9);
             border-radius: 10px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             margin: 30px auto 50px;
             max-width: 1000px;
         }
         
-        .about-content {
+        .policy-content {
             text-align: left;
             padding: 40px;
-            color: #333;
+            color: #4b3621;
         }
         
-        header {
+        .policy-header {
             background: linear-gradient(to right, #8b5a2b, #5a3e2b);
             color: #f5e6ca;
-            padding: 40px 20px;
-            margin-bottom: 30px;
+            padding: 50px 20px;
+            text-align: center;
         }
         
-        header p {
+        .policy-header p {
             max-width: 800px;
             margin: 10px auto;
             font-size: 18px;
@@ -75,13 +75,15 @@
             line-height: 1.5;
         }
         
-        a {
+        .policy-content a {
             color: #8b5a2b;
             text-decoration: none;
             font-weight: bold;
+            transition: color 0.3s ease;
         }
         
-        a:hover {
+        .policy-content a:hover {
+            color: #5a3e2b;
             text-decoration: underline;
         }
         
@@ -98,10 +100,26 @@
         }
         
         .acknowledgment {
-            background-color: #f9f3ea;
+            background-color: #e3caa8;
             padding: 15px 20px;
-            border-radius: 6px;
-            margin-top: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        
+        .back-to-home {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background: linear-gradient(45deg, #8b5a2b, #5a3e2b);
+            color: #f5e6ca;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        
+        .back-to-home:hover {
+            background: rgba(139, 90, 43, 0.8);
         }
         
         /* Responsive adjustments */
@@ -111,7 +129,7 @@
                 border-radius: 8px;
             }
             
-            .about-content {
+            .policy-content {
                 padding: 25px;
             }
             
@@ -128,16 +146,16 @@
     </style>
 </head>
 <body>
-    <header>
+    <div class="policy-header">
         <h1>
             <span class="project-name">TextTrace</span> 
             <span class="tagline">Privacy Policy</span>
         </h1>        
         <p>Your privacy is important to us. Please read our Privacy Policy to understand how we collect, use, and protect your information.</p>
-    </header>
+    </div>
 
     <section id="privacy-policy">
-        <div class="about-content">
+        <div class="policy-content">
             <h2>Privacy Policy for TextTrace</h2>
             <p class="last-updated"><strong>Last Updated: April 20, 2025</strong></p>
             
@@ -278,6 +296,10 @@
             <div class="acknowledgment">
                 <p>By using TextTrace, you acknowledge that you have read and understood this Privacy Policy and agree to its terms and conditions.</p>
             </div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="index.html" class="back-to-home">Back to Home</a>
+            </div>
         </div>
     </section>
 
@@ -302,6 +324,7 @@
             </div>
         </div>
         <p class="copyright">&copy; 2025 AI Content Detector. All rights reserved.</p>
+        <p><a href="index.html">Home</a> | <a href="privacy-policy.html">Privacy Policy</a></p>
     </footer>
 
     <script src="js/script.js"></script>
