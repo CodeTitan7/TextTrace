@@ -9,6 +9,123 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/icon16.png">
     <link rel="icon" type="image/png" sizes="48x48" href="images/icon48.png">
     <link rel="icon" type="image/png" sizes="128x128" href="images/icon128.png">
+    <style>
+        /* Override styles for privacy policy page */
+        #privacy-policy {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin: 30px auto 50px;
+            max-width: 1000px;
+        }
+        
+        .about-content {
+            text-align: left;
+            padding: 40px;
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(to right, #8b5a2b, #5a3e2b);
+            color: #f5e6ca;
+            padding: 40px 20px;
+            margin-bottom: 30px;
+        }
+        
+        header p {
+            max-width: 800px;
+            margin: 10px auto;
+            font-size: 18px;
+        }
+        
+        h2 {
+            color: #5a3e2b;
+            border-bottom: 2px solid #d2b48c;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+        
+        h3 {
+            color: #8b5a2b;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+        
+        h4 {
+            color: #4b3621;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+        
+        a {
+            color: #8b5a2b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        hr {
+            border: none;
+            border-top: 1px solid #d2b48c;
+            margin: 30px 0;
+        }
+        
+        .last-updated {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 25px;
+        }
+        
+        .acknowledgment {
+            background-color: #f9f3ea;
+            padding: 15px 20px;
+            border-radius: 6px;
+            margin-top: 20px;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            #privacy-policy {
+                margin: 20px;
+                border-radius: 8px;
+            }
+            
+            .about-content {
+                padding: 25px;
+            }
+            
+            .footer-left, .footer-center, .footer-right {
+                width: 100%;
+                margin-bottom: 30px;
+                text-align: center;
+            }
+            
+            .footer-container {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -22,44 +139,145 @@
     <section id="privacy-policy">
         <div class="about-content">
             <h2>Privacy Policy for TextTrace</h2>
-            <p>At TextTrace, we value your privacy and are committed to safeguarding the personal information you share with us. This privacy policy outlines how we collect, use, and protect your data when you use our services.</p>
+            <p class="last-updated"><strong>Last Updated: April 20, 2025</strong></p>
+            
+            <h3>Introduction</h3>
+            <p>At TextTrace ("we," "us," or "our"), we are committed to protecting your privacy and safeguarding the personal information you entrust to us. This Privacy Policy explains how we collect, use, disclose, and protect your information when you use our TextTrace browser extension ("Extension"), which analyzes text to determine whether it is AI-generated or human-written.</p>
+            <p>By installing, accessing, or using our Extension, you agree to the collection and use of information in accordance with this policy. If you do not agree with any part of this policy, please do not use our Extension.</p>
 
             <h3>1. Information We Collect</h3>
-            <p>We collect the following types of information when you use TextTrace:</p>
+            <h4>1.1 Account Information</h4>
+            <p>When you register for an account with TextTrace, we collect:</p>
             <ul>
-                <li><strong>Personal Identification Information:</strong> When you sign up for an account, we may collect your email address and other registration information.</li>
-                <li><strong>Usage Data:</strong> We may collect data regarding your usage of TextTrace, including the text you input for analysis and your interactions with the website.</li>
-                <li><strong>IP Address:</strong> We collect your IP address for security and monitoring purposes.</li>
+                <li>Email address</li>
+                <li>Password (securely encrypted)</li>
+                <li>IP address at the time of registration and login</li>
+            </ul>
+
+            <h4>1.2 User Verification Data</h4>
+            <ul>
+                <li>Email verification status</li>
+                <li>Verification timestamps</li>
+            </ul>
+
+            <h4>1.3 Text Analysis Data</h4>
+            <ul>
+                <li>Text content submitted for AI/human authorship analysis</li>
+                <li>Analysis results and confidence scores</li>
+            </ul>
+
+            <h4>1.4 Technical Information</h4>
+            <p>We may collect technical data about your browser and device, including:</p>
+            <ul>
+                <li>IP address</li>
+                <li>Browser type and version</li>
+                <li>Operating system</li>
+                <li>Extension usage statistics</li>
             </ul>
 
             <h3>2. How We Use Your Information</h3>
-            <p>We use the information we collect to:</p>
+            <p>We use your information for the following legitimate purposes:</p>
+
+            <h4>2.1 Authentication and Account Management</h4>
             <ul>
-                <li>Provide and improve the functionality of TextTrace.</li>
-                <li>Communicate with you regarding updates or important information related to the service.</li>
-                <li>Ensure the security and integrity of our website and services.</li>
+                <li>To create and manage your user account</li>
+                <li>To verify your email address through our verification process</li>
+                <li>To authenticate you when you log in to the Extension</li>
+                <li>To store JSON Web Tokens (JWT) in browser storage for session management</li>
             </ul>
 
-            <h3>3. Data Retention</h3>
-            <p>We retain your information only as long as necessary to fulfill the purposes outlined in this policy or as required by law.</p>
+            <h4>2.2 Core Service Functionality</h4>
+            <ul>
+                <li>To analyze text submissions to determine if they are AI-generated or human-written</li>
+                <li>To generate and display confidence scores for analysis results</li>
+                <li>To maintain a record of your analysis history (if applicable)</li>
+            </ul>
 
-            <h3>4. Data Security</h3>
-            <p>We take appropriate measures to protect your data from unauthorized access, alteration, or deletion. However, no method of data transmission over the internet or method of electronic storage is completely secure, and we cannot guarantee absolute security.</p>
+            <h4>2.3 Security and Protection</h4>
+            <ul>
+                <li>To monitor login attempts and prevent unauthorized access</li>
+                <li>To detect and prevent fraudulent or abusive use of our Extension</li>
+                <li>To protect the integrity of our service</li>
+            </ul>
 
-            <h3>5. Third-Party Disclosure</h3>
-            <p>We do not sell, trade, or otherwise transfer your personally identifiable information to third parties, except for the necessary use of service providers that support the operation of TextTrace.</p>
+            <h4>2.4 Communication</h4>
+            <ul>
+                <li>To send email verification links</li>
+                <li>To provide service-related notifications and updates</li>
+                <li>To respond to your inquiries and support requests</li>
+            </ul>
 
-            <h3>6. Cookies</h3>
-            <p>TextTrace uses cookies to enhance the user experience. Cookies are small text files stored on your device. You can adjust your browser settings to refuse cookies, but this may affect your ability to use certain features of TextTrace.</p>
+            <h3>3. Data Storage and Security</h3>
 
-            <h3>7. Your Rights</h3>
-            <p>You have the right to access, correct, or delete your personal data. If you wish to exercise these rights or have any concerns regarding your data, please contact us at <a href="mailto:devan2004v@gmail.com">devan2004v@gmail.com</a>.</p>
+            <h4>3.1 Account Security</h4>
+            <ul>
+                <li>Passwords are securely hashed and never stored in plaintext</li>
+                <li>Email verification is required before account access is granted</li>
+                <li>IP addresses are logged for security monitoring purposes</li>
+            </ul>
+
+            <h4>3.2 Local Storage</h4>
+            <ul>
+                <li>JWT tokens are stored in your browser's local storage for authentication</li>
+                <li>These tokens expire after a set period and require re-authentication</li>
+            </ul>
+
+            <h4>3.3 Data Protection</h4>
+            <p>We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the Internet or electronic storage is 100% secure.</p>
+
+            <h3>4. Data Retention</h3>
+            <p>We retain your personal information only for as long as necessary to provide our services and fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required or permitted by law. Specifically:</p>
+            <ul>
+                <li>Account information is retained as long as your account remains active</li>
+                <li>Text submissions may be retained for improving our AI detection algorithms (see section 5.1)</li>
+                <li>Login records and IP addresses are retained for security purposes</li>
+            </ul>
+            <p>If you delete your account, we will delete or anonymize your personal information within a reasonable timeframe, except where retention is necessary for legitimate business purposes or legal obligations.</p>
+
+            <h3>5. Information Sharing and Disclosure</h3>
+            <p>We do not sell, rent, or trade your personal information to third parties for marketing purposes. We may share your information in the following limited circumstances:</p>
+
+            <h4>5.1 Improving Our Technology</h4>
+            <p>Text submissions may be used in an anonymized form to improve our AI detection algorithms and technology. No personal identifiers are connected to these submissions when used for improvement purposes.</p>
+
+            <h4>5.2 Service Providers</h4>
+            <p>We may share information with third-party vendors and service providers who perform services on our behalf and require access to such information (e.g., email verification services, hosting providers).</p>
+
+            <h4>5.3 Legal Requirements</h4>
+            <p>We may disclose your information if required to do so by law or in response to valid requests by public authorities (e.g., a court or government agency).</p>
+
+            <h4>5.4 Business Transfers</h4>
+            <p>If we are involved in a merger, acquisition, or sale of all or a portion of our assets, your information may be transferred as part of that transaction.</p>
+
+            <h3>6. Your Privacy Rights</h3>
+            <p>Depending on your location, you may have certain rights regarding your personal information, including:</p>
+            <ul>
+                <li><strong>Right to Access</strong>: You can request copies of your personal information that we hold.</li>
+                <li><strong>Right to Rectification</strong>: You can ask us to correct inaccurate information.</li>
+                <li><strong>Right to Erasure</strong>: You can request that we delete your account and personal information.</li>
+                <li><strong>Right to Restrict Processing</strong>: You can ask us to restrict the processing of your information.</li>
+                <li><strong>Right to Data Portability</strong>: You can request the transfer of your information to yourself or another service provider.</li>
+                <li><strong>Right to Object</strong>: You can object to our processing of your personal information.</li>
+            </ul>
+            <p>To exercise any of these rights, please contact us using the information provided in the "Contact Us" section.</p>
+
+            <h3>7. Children's Privacy</h3>
+            <p>Our Extension is not intended for use by children under the age of 16. We do not knowingly collect personal information from children under 16. If you are a parent or guardian and believe that your child has provided us with personal information, please contact us so that we can take appropriate action.</p>
 
             <h3>8. Changes to This Privacy Policy</h3>
-            <p>We may update this privacy policy from time to time. Any changes will be posted on this page, and the "Last Updated" date will reflect the date of the most recent revision.</p>
+            <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We will notify you of any material changes by posting the updated policy on our website with a revised "Last Updated" date. We encourage you to review this Privacy Policy periodically.</p>
 
-            <h3>9. Contact Information</h3>
-            <p>If you have any questions or concerns about this privacy policy or our practices, please contact us at <a href="mailto:devan2004v@gmail.com">devan2004v@gmail.com</a>.</p>
+            <h3>9. Contact Us</h3>
+            <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at:</p>
+            <p>Email: <a href="mailto:devan2004v@gmail.com">devan2004v@gmail.com</a></p>
+
+            <h3>10. Governing Law</h3>
+            <p>This Privacy Policy shall be governed by and construed in accordance with applicable data protection laws.</p>
+
+            <hr>
+            <div class="acknowledgment">
+                <p>By using TextTrace, you acknowledge that you have read and understood this Privacy Policy and agree to its terms and conditions.</p>
+            </div>
         </div>
     </section>
 
