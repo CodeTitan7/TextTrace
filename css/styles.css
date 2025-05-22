@@ -238,6 +238,7 @@ footer {
     padding: 20px;
 }
 
+
 #extension {
     background: linear-gradient(135deg, #8b5a2b, #5a3e2b);
     color: #f5e6ca;
@@ -249,6 +250,7 @@ footer {
     font-size: 32px;
     margin-bottom: 15px;
 }
+
 .chrome-extension-btn {
     display: inline-flex;
     align-items: center;
@@ -258,14 +260,16 @@ footer {
     font-weight: bold;
     border: none;
     border-radius: 10px;
-    background: linear-gradient(45deg, #f5e6ca, #d2b48c);
-    color: #4b3621;
+    background: linear-gradient(45deg, #e3caa8, #d2b48c);
+    color: #f5e6ca;
     cursor: pointer;
     text-decoration: none;
     transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .chrome-extension-btn:hover {
     transform: translateY(-2px);
-    background: linear-gradient(45deg, #e3caa8, #c19a6b);
+    background: linear-gradient(45deg, #d2b48c, #c19a6b);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
